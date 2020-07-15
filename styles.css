@@ -431,6 +431,9 @@ footer p {
         margin-left: 50px;
     }
 
+    nav ul li {
+       font-size: 20px;
+    }
 
     .aboutme {
         width: 80%;
