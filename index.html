@@ -1,0 +1,139 @@
+<!-- Portolio Lupinu Riccardo
+Contatto: lupinu.ric@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Visualizza il mio portfolio!">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Lupinu Riccardo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <title>My Portfolio - Lupinu Riccardo</title>
+  <link rel="stylesheet" href='styles.css'>
+  <!-- Add_Font -->
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <section>
+    <!-- Navbar -->
+    <nav id='nav'>
+      <a href="#" class='logo'>My Portfolio</a>
+
+      <ul>
+        <li><a href="#aboutme" class='active'>Chi sono</a> </li>     
+        <li><a href="#project" class='active'>Progetti</a> </li>  
+        <li><a href="#contactme" class='active'>Contattami</a> </li> 
+        <li><a href="#social" class='active'>Social</a> </li>    
+
+      </ul>
+
+      <div class="toggle"></div>
+    </nav>
+    <!-- CloseNavbar -->
+    <!-- Intro -->
+    <div class='intro' id='contactme'>
+      <p>Benvenuto, mi chiamo</p>
+      <p>Lupinu Riccardo</p>
+      <p>E sono uno studente di <br> Ingegneria Informatica.</p>
+      <p >Hai qualcosa da propormi? <br> Clicca qui per scrivermi una mail!</p>
+      <a href="mailto:lupinu.ric@gmail.com"><button >Contattami</button></a>
+    </div>
+    <!--<img src="/Immagini/model.png" class='photo' alt='Questo sono io!'>-->
+    <!-- CloseIntro -->
+  </section>
+
+ <!-- Aboutme -->
+  <div class="aboutme" id='aboutme'>
+    <div class="about-text" >
+      <p>Chi Sono?</p>
+      <p>Ho 21 anni e vengo dalla Sardegna, più precisamente dalla provincia di Sassari.</p>
+      <p>Sono appassionato di programmazione, in generale di tutto ciò che riguarda la tecnologia, la crescita personale e lo sport. </p>
+      <p>Nel tempo libero mi dedico alla lettura oppure gioco ai videogames.</p>
+    </div>
+    <div class="about-text2">
+      <p>Obiettivi</p>
+      <p>Il mio obiettivo principale è quello di conculudere l'università nel tempo prestabilito.</p>
+      <p>Il mio obiettivo secondario è quello di imparare il maggior numero di linguaggi di programmazione.</p>
+      <p>Per il mio futuro, oltre essere un programmatore, mi piacerebbe lavorare nell'ambito della sicurezza infromatica.</p>
+      
+    </div>
+  </div>
+  <!-- CloseAboutme -->
+  <!-- Education -->
+  <div class="education"> 
+    <div class="education-container">
+      <p class='title'>Istruzione</p>
+      <p class='education-text'>Mi sono diplomato in Elettrotecnica nel 2018, all'Istituto Tecnico Industriale G.M. Angioy di Sassari. </p>
+      <p class='education-text'>Subito dopo il diploma ho iniziato a  cercare lavoro, con scarsi risultati, allora ho deciso di frequentare dei corsi di formazione. </p>
+      <p class='education-text'>Mi sono iscritto all'Università, nella facoltà di Ingegneria Informatica e attualmente sono al primo anno di studi.</p>
+    </div>
+    <div class="skills-container">
+      <p class='title'>Skills</p>
+        <div class='skills'>
+          <p class='skill-text'>HTML - 20%</p>
+          <div class='skill html'></div>
+          <p class='skill-text'>CSS - 20%</p>
+          <div class='skill css'></div>
+          <p class='skill-text'>C - 30%</p>
+          <div class='skill c'></div>
+          <p class='skill-text'>Javascript - 5%</p>
+          <div class='skill js'></div>
+        </div>
+    </div>
+  </div>
+  <!-- CloseEducation -->
+  <!-- Project -->
+  <div class="project-container" id='project'>
+    <div class="box-1">
+      <span>1</span>
+      <p class='heading'>Start2impact</p>
+      <p class='details'>Ho iniziato il percorso di studi con start2impact ad aprile 2020, seguendo il corso di Sviluppo Web.</p>
+      <a href="https://talent.start2impact.it/profile/riccardo-lupinu" target="_blank"><button>Il mio profilo</button></a>
+    </div>
+    
+    <div class="box-2">
+      <span>2</span>
+      <p class='heading'>Dynamic Range Studio</p>
+      <p class='details'>A fine 2019 ho iniziato a collaborare con il gruppo DynamicRangeStudio, uno studio creativo che si occupa di svilluppo web, grafiche e stampa 3D.</p>
+      <a href="http://dynamicrange.studio" target="_blank"><button>Scopri di più</button> </a>
+    </div>
+
+    <div class="box-3">
+      <span>3</span>
+      <p class='heading'>Progetti</p>
+      <p class='details'>Ad ora questo è il mio primo ed unico progetto, ma ovviamente cercherò di aggiornare il portfolio con costanza.</p>
+    </div>
+  </div>
+  <!-- CloseProject -->
+
+  <!-- Social -->
+
+  <footer id='social'>
+    <p>Questi sono i miei canali social!</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/riccardo.lupinu" target="_blank"> <i class='fab fa-facebook'> </i> </a>
+      <a href="https://www.instagram.com/lupinuriccardo__/?hl=it" target="_blank"> <i class='fab fa-instagram'> </i></a>
+      <a href="#" target="_blank"> <i class='fab fa-linkedin'> </i></a>
+    </div>
+
+  </footer>
+  <!-- CloseSocial -->
+
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".toggle").click(function(){
+          $(".toggle").toggleClass('active')
+          $("#nav").toggleClass('active')
+        })
+    })
+  </script>
+  <!-- CloseJQuery -->
+</body>
+</html>
